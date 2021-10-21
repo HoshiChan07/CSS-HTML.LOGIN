@@ -1,0 +1,278 @@
+body{
+    background-color: #f5f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar */
+.navbar ul{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 5px rgba(255,255,255, .8);
+    background: linear-gradient(to left,#686de0,#74b9ff);
+}
+.navbar .logo{
+    position: fixed;
+    z-index: 999;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 30px;
+    top: 15px;
+    left: 10%;
+    font-weight: bold;
+    color: white;
+}
+.navbar .logo h1{
+    animation: slide 1s forwards;
+}
+.navbar ul li{
+    position: relative;
+    font-size: 15;
+    text-transform: capitalize;
+    top: 10px;
+    float: right;
+    right: 10%;
+    margin-right: 20px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    transition: .3s;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #74b9ff;
+}
+.navbar ul li:hover{
+    padding: 13px;
+}
+/* akhir navbar */
+.garis{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #dcdde1;
+    animation: slide 1s 1s forwards;
+}
+.garis h1{
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #686de0;
+    text-shadow: 1px 1px white;
+}
+.kirim{
+    position: relative;
+    top: 80px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     width: 200px;
+     margin-left: 200px;
+ }
+ .icon{
+     transition: 1s;
+ }
+ .icon:hover{
+     filter: contrast(50%);
+     width: 55px;
+     height: 55px;
+ }
+/* halaman */
+.container-2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin: 50px 0;
+    transition: .5s;
+}
+/* sidebar kiri */
+.aturan-sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar-kiri{
+    position: relative;
+    height: 700px;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 20px;
+    background-color: white;
+    box-shadow: 0 0 1px black;
+    padding: 15px;
+}
+.aturan-sidebar .sidebar-kiri .berita-terkini, 
+.aturan-sidebar .sidebar-kiri .berita-terkini h1{
+    animation: slide-1 forwards 1s 1s;
+}
+.sidebar-kiri .berita-terkini{
+    position: absolute;
+    background: linear-gradient(to left,#686de0,#74b9ff);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    opacity: 0;
+}
+.sidebar-kiri .berita-terkini h1{
+    position: relative;
+    top: 15px;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 10%;
+    font-weight: bold;
+    animation: slide-1 forwards .5s .5s;
+}
+/* akhir sidebar-kiri */
+/* sidebar-tengah */
+.sidebar-tengah{
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 1px black;
+    height: 1500px;
+    overflow: auto;
+}
+
+.sidebar-tengah span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+.sidebar-tengah p{
+    font-family: sans-serif;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 20px;
+}
+/* akhir sidebar-tengah */
+.sidebar-kanan{
+    margin: 0 20px;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 0 0 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar-kanan div{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.sidebar-kanan .jk-1 {
+    background-image: url(../img/iklan\ \(1\).jpg);
+    background-size: cover;
+}
+.sidebar-kanan .jk-2{
+    background-image: url(../img/iklan\ \(2\).jpg);
+    background-size: cover; 
+}
+.sidebar-kanan .jk-3{
+    background-image: url(../img/iklan\ \(3\).jpg);
+    background-size: cover;
+    flex: 2;
+}
+.sidebar-kanan .jk-4{
+    background-image: url(../img/iklan\ \(1\).jpeg);
+    background-size: cover;
+}
+/* akhir sidebar-tengah */
+/* sidebarKiri-bawah */
+.sidebarKiri-bawah{
+    position: relative;
+    height: 700px;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 20px;
+    background-color: white;
+    box-shadow: 0 0 1px black;
+    padding: 15px;   
+}
+.fof img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+/* akhir sidebarKiri-bawah */
+/* rekomendasi */
+.container-3{
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+}
+.judul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black ;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    border-bottom: solid 5px #686de0;
+    margin: 0 100px;
+    background-color: white;
+}
+
+.flex-konten{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.flex-konten .konten-1 img{
+    width: 200px;
+    height: 200px;
+
+    
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to left,#686de0,#74b9ff);
+}
+
+/* animasi */
+@keyframes slide{
+    0%{
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
+}
+@keyframes slide-1{
+    0%{
+        opacity: 0;
+        margin-left: -30px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0;
+    }
+}
